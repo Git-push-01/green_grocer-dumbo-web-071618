@@ -4,8 +4,8 @@ def consolidate_cart(cart:[])
   cart.each do |item|
     item.each do |name, attribute|
       if con_hash.has_key?(name)
-        con_hash[name][:count] += 1        
-      else 
+        con_hash[name][:count] += 1
+      else
         con_hash = con_hash.merge({name => attribute.merge({count: 1})})
       end
     end
@@ -49,3 +49,4 @@ end	end
     total += attribute[:count] * attribute[:price]
   end
   return total = total > 100 ? (total*0.9).round(2) : total
+end
