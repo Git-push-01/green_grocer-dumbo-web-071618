@@ -30,7 +30,6 @@ end
   end
   return cart_cons
 end
-end
  def apply_clearance(cart:[])	def apply_clearance(cart:[])
   # code here	  # code here
   # cart_cons = consolidate_cart(cart: cart)
