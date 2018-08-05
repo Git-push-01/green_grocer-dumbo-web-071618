@@ -11,7 +11,7 @@ def consolidate_cart(cart:[])
     end
   end
   return con_hash
-end	end
+end	
  def apply_coupons(cart:[], coupons:[])	def apply_coupons(cart:[], coupons:[])
   # code here	  # code here
   # cart_cons = consolidate_cart(cart: cart)
@@ -28,7 +28,7 @@ end	end
     end
   end
   return cart_cons
-end	
+end
  def apply_clearance(cart:[])	def apply_clearance(cart:[])
   # code here	  # code here
    #cart_cons = consolidate_cart(cart: cart)
