@@ -30,8 +30,8 @@ end	end
   return cart_cons
 end	end
  def apply_clearance(cart:[])	def apply_clearance(cart:[])
-  # code here	  # code here
-  # cart_cons = consolidate_cart(cart: cart)
+  
+   cart_cons = consolidate_cart(cart: cart)
   cart.each do |item, attribute|
     if attribute[:clearance] == true
       attribute[:price] = (attribute[:price]*0.8).round(2)
@@ -40,7 +40,7 @@ end	end
   return cart
 end	end
  def checkout(cart: [], coupons: [])	def checkout(cart: [], coupons: [])
-  # code here	  # code here
+  
   cart_cons = consolidate_cart(cart: cart)
   cart_coup = apply_coupons(cart:cart_cons, coupons:coupons)
   cart_check = apply_clearance(cart: cart_coup)
