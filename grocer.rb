@@ -49,7 +49,3 @@ end
     total += attribute[:count] * attribute[:price]
   end
   return total = total > 100 ? (total*0.9).round(2) : total
-end
-end
-end
-end
