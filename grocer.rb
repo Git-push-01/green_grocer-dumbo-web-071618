@@ -40,7 +40,7 @@ end
   return cart
 end	
  def checkout(cart: [], coupons: [])	def checkout(cart: [], coupons: [])
-  # code here	  # code here
+  # code here	  
   cart_cons = consolidate_cart(cart: cart)
   cart_coup = apply_coupons(cart:cart_cons, coupons:coupons)
   cart_check = apply_clearance(cart: cart_coup)
