@@ -62,18 +62,3 @@ def checkout(cart, coupons)
 	return total
   # code here
 end
-fcart =     [
-      {"BEER" => {:price => 13.00, :clearance => false}},
-      {"BEER" => {:price => 13.00, :clearance => false}},
-      {"BEER" => {:price => 13.00, :clearance => false}}
-    ]
-
-fcoup =     [
-      {:item => "BEER", :num => 2, :cost => 20.00},
-      {:item => "BEER", :num => 2, :cost => 20.00},
-]
-
-
-#puts consolidate_cart(fcart)
-#puts '====================='
-puts apply_coupons(consolidate_cart(fcart),fcoup)
