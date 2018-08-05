@@ -4,7 +4,7 @@ def consolidate_cart(cart:[])
   consolidated_cart
 end	end
  def apply_coupons(cart:[], coupons:[])	def apply_coupons(cart:[], coupons:[])
-  # code here	  coupons_applied = {}
+	  coupons_applied = {}
   coupons.each do |coupon|
     if cart.key?(coupon[:item])
       coupon_count = 0
