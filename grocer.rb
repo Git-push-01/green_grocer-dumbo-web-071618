@@ -40,7 +40,7 @@ end
   end
   return cart
 end
-end
+
  def checkout(cart: [], coupons: [])	def checkout(cart: [], coupons: [])
   # code here	  # code here
   cart_cons = consolidate_cart(cart: cart)
